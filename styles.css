@@ -1,0 +1,640 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	position: relative;
+	line-height: 1;
+	background-color: white;
+	color: rgb(67, 78, 107);
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*************************** End of Eric Meyer ************************/
+
+
+
+
+/*************************************************************
+*********************** Mobile version ********************
+**************************************************************/
+
+
+
+
+/****************** General *****************************/
+
+
+a {
+	text-decoration: none;
+	color: rgb(67, 82, 121);
+}
+
+.wrapper-gallery p img {
+	max-width: 100%;
+	width: 100%;
+}
+
+
+/********************* Current links ************************/
+
+
+a.current {
+	background-color: rgb(67, 82, 121)!important;
+	color: white!important
+}
+
+a.current-gallery{
+	color: rgb(67, 82, 121)!important;
+	background-color: white!important;
+}
+
+/******************* Header *******************************/
+
+
+
+h1#main-heading {
+
+	text-align: center;
+	letter-spacing: 0.2rem;
+	font-size: 1.6rem;
+	font-weight: 800;
+	margin: 1.5rem 0;
+}
+
+
+/********************** Main nav **************************/
+
+#main-nav {
+	text-align: center;
+}
+
+
+#main-nav li {
+	border-bottom: 1px dotted rgb(67, 82, 121);
+}
+
+#main-nav li:last-child {
+	border-bottom: none;
+	padding-bottom: 0;
+}
+
+#main-nav a {
+	display: block;
+	color: rgb(67, 82, 121);
+	padding: 1rem 2rem;
+	transition: background-color 0.4s;
+
+}
+
+#main-nav a:hover {
+	background-color: rgba(67, 82, 121, 0.8);
+	color: white;
+}
+
+
+/*************************  nav desktop hidden ***********************************/
+
+
+header nav#main-nav-desktop ul, footer nav#footer-nav-desktop ul,
+#main-nav-desktop-gallery { /** hide navigation and footer desktop **/
+	display: none;
+}
+
+
+/************************ images *************************************/
+
+
+.wrapper-gallery p {
+	text-align: center;
+	margin-bottom: 1rem;
+}
+
+
+.bg-image {
+	position:relative;
+	overflow: hidden;
+	text-align: center;
+	padding-bottom: 1.2rem;
+
+}
+
+.bg-image img {
+	opacity: 1;
+	transition: opacity 1s, transform 1s;
+}
+
+.bg-image img:hover {
+	opacity: 0.6;
+	transform: scale(1.1);
+}
+
+.bg-image img:hover + p.button-gallery a,
+p.button-gallery a:hover {
+	background-color: rgba(255,255,255,1);
+	color: rgb(67, 82, 121);
+}  
+
+/************************* Button *****************************/
+
+
+p.button-gallery {
+	position: absolute;
+  	top: 80%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+	background-color: transparent;
+	border: 2px solid white;
+	border-radius: 5px;
+	color: #1C1C1C;
+} 
+
+p.button-gallery a {
+	display: block;
+	color: white;
+	font-size:0.9rem;
+	font-weight: 600;
+	background-color: rgba(0,0,0,0);
+	transition: background-color 2s, color 2s;
+	padding: 1.5rem 2rem;
+}
+
+
+/* p.button-gallery a:hover {
+	background-color: rgba(255,255,255,1);
+	color: rgb(67, 82, 121);
+}  */
+
+
+/************************** About **********************/
+
+
+main article {
+	padding: 1rem 1.5rem;
+	line-height: 1.3;
+}
+
+article h1.heading-about {
+	font-size: 1.6rem;
+	font-weight: 600;
+	padding-bottom: 0.6rem;
+}
+main article p {
+	padding-bottom: 1rem;
+}
+
+main article p a {
+	color:rgba(211, 133, 17, 0.8)
+}
+
+main article p a:hover, #footer-nav ul li a:hover {
+	color:rgba(88, 57, 204, 0.8)
+}
+
+
+
+/*********************************** Contact ******************************/
+
+main form {
+	text-align: center;
+	margin: 5rem 2rem;
+}
+
+main form div.input-section {
+	margin-bottom: 2rem;
+}
+
+.input-section p {
+	text-align: left;
+}
+
+input { 
+	display: block;
+	margin: 0.5rem 0;
+}
+
+form input {
+	width: 95%;
+	max-width: 30em;
+	height: 1.5rem;
+}
+
+form input#message {
+	height: 12rem;
+}
+
+form div.input-section:last-child p  {
+	display: flex;
+}
+
+form div.input-section:last-child p input{
+	margin-right: 0.5rem;
+}
+
+form input.btn {
+	width:min-content;
+}
+
+main p.img8 {
+	display: none;
+}
+
+
+
+/**************************** footer ************************/
+
+
+
+footer nav#footer-nav ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: center;
+	margin: 2rem;
+
+}
+
+footer nav#footer-nav ul li {
+	padding: 0 0 1rem 0.8rem;
+}
+
+footer nav#footer-nav ul li a {
+	font-size: 0.8rem;
+	color: rgb(67, 78, 107);
+	border-right: 1px solid gray;
+	padding-top: 0;
+	padding-right: 0.8rem
+	
+}
+
+footer nav#footer-nav ul li a:last-child {
+	border-right: none;
+} 
+
+
+
+/***********************************************************************
+***************************** Media queries Tablet ***************************
+************************************************************************/
+
+
+@media screen and (min-width: 48em) {
+
+	
+/************************************ Grid for gallery *****************************/
+
+/* .wrapper-gallery {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+.column-lof {
+	flex: 45%;
+	max-width: 45%;
+	/* padding: 0 5px; 
+}
+
+.column-lof img {
+	margin: 1px;
+	width: 100%;
+	vertical-align: middle;
+} */
+.wrapper-gallery  {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.wrapper-gallery p.img1 {
+	grid-column: 1/3;
+	grid-row: 1/3;
+}
+
+.wrapper-gallery p.img5 {
+	grid-column: 2/4;
+	grid-row: 3/5;
+}
+
+.wrapper-gallery p.img7 {
+	grid-column: 1/3;
+	grid-row: 5/7;
+}
+
+.wrapper-gallery p {
+	margin-bottom: 0;
+	border: 1px solid white;
+}
+
+
+/*************** About *****************************/
+
+
+article h1.heading-about {
+	font-size: 2rem;
+	padding-bottom: 1rem;
+}
+
+/************** Contact *******************************/
+
+
+
+form input {
+	max-width: 40em;
+}
+
+
+
+} /* End of media queries for tablet ***************************/
+
+
+/***********************************************************************
+***************************** Media queries Desktop ***************************
+************************************************************************/
+
+
+@media screen and (min-width: 62.5em) {
+
+
+	body {
+		background-color: white;
+	}
+
+	h1#main-heading {
+		margin: 3rem 0 3rem 0;
+		text-align: left;
+		margin-left: 5rem;
+		background-image: url("images/icon-camera1.svg");
+		background-repeat: no-repeat;
+			/* background-position: 20%; */
+		padding-left: 3rem;
+	}
+
+
+	/******************* main nav homepage ***************************************/
+
+	
+	 #wrapper {
+		max-width: 100em;
+		margin: 0 auto;
+	} 
+	
+	header nav#main-nav, footer nav#footer-nav { /*** hide the navigation for mobile ***/
+		display: none;
+	}
+
+
+	header nav#main-nav-desktop  { /* Move the navigation homepage with absolute position for the design */
+		position:absolute;
+		max-width: 100em;
+		width: 100%;
+		top: 12%;
+		background-color: white;
+		color: black;
+		z-index: 10;
+		opacity: 0.7;
+	}
+
+	
+	header nav#main-nav-desktop ul, header nav#main-nav-desktop-gallery ul { /***** Navigation homepage and gallery displayed with flex *********/
+		display: flex;
+		justify-content: space-evenly;	
+	}
+
+	header nav#main-nav-desktop-gallery ul li,
+	header nav#main-nav-desktop ul li {
+		width:13%;
+		height: auto;
+		text-align: center;
+	}
+
+	header nav#main-nav-desktop ul li a {
+		display: block;	
+		color: rgb(67, 82, 121);
+		padding: 1rem 0;
+	}
+
+
+	/******************************** Main nav gallery ***********************/
+
+
+	header #main-nav-desktop-gallery { /* Display the desktop navigation *****************/
+		display: block;
+	}
+
+	header nav#main-nav-desktop-gallery ul {
+		background-color: rgb(67, 82, 121);
+		width: 100%;
+	}
+
+
+	header nav#main-nav-desktop-gallery ul li a {
+		display: block;
+		padding: 1rem 0;
+	}
+
+	header nav#main-nav-desktop-gallery ul li a,
+	header nav#main-nav-desktop ul li a:hover {
+		background-color: rgb(67, 82, 121);
+		color: white;
+	}
+
+	header nav#main-nav-desktop-gallery ul li a:hover {
+		color: rgb(67, 82, 121);
+		background-color: white;
+	}
+
+
+
+	/*************************** Images background **********************************/
+
+	.bg-image {
+		display: none;
+	}
+
+	.bg-image-desktop {
+		display: block; /**** Display all background images for each section of the nav ********/
+		position: relative;
+	}
+
+	/************************* Grid Images gallery ***********************************/
+
+	
+
+	 .wrapper-gallery {
+		grid-template-columns: repeat(5, 1fr);
+		margin-bottom: 2rem;
+		gap: 0;
+		margin-top: 2rem;
+	}
+
+	.wrapper-gallery p {
+		margin: 0;
+		padding: 0;
+		text-align: right;
+	}
+
+	.wrapper-gallery p.img1 {
+		grid-column: 1/3;
+		grid-row: 1/3;
+	}
+
+	.wrapper-gallery p.img2 {
+		grid-column: 5/6;
+		grid-row: 1/2;
+	}
+
+	.wrapper-gallery p.img3 {
+		grid-column: 3/5;
+		grid-row: 1/3;
+	}
+
+	.wrapper-gallery p.img4 {
+		grid-column: 5/6;
+		grid-row: 2/3;
+	}
+
+	.wrapper-gallery p.img6 {
+		grid-column: 1/4;
+		grid-row: 3/5;
+	}
+
+	.wrapper-gallery p.img7 {
+		display: none;
+	}
+
+	.wrapper-gallery p.img8 {
+		display: none;
+	}
+	
+	.wrapper-gallery p.img9 {
+		grid-column: 4/6;
+		grid-row: 3/5;
+	} 
+	
+ 
+
+	/********************************* Button ******************************/
+
+
+	#button-gallery-desktop {
+		display: none; /*** Hide the button only on the homepage of the desktop version *****/
+	}
+
+	p.button-gallery {
+		border: 3px solid white;
+	}
+	
+	p.button-gallery a {
+		font-size: 1.3rem;
+	}
+
+
+	/************************************* About ****************************/
+
+	
+	main.main-about {
+		margin: 2rem;
+	}
+
+	main.main-about .float {
+		float: left;
+		padding-right: 3rem;
+		margin-bottom: 8rem;
+	}
+
+	footer.footer-about {
+		clear: both;
+		margin-top: 2rem;
+	}
+
+	/************** Contact *******************************/
+
+
+form {
+	max-width: 30em;
+}
+
+main p.img8 {
+	display: block;
+}
+
+main#main-contact {
+	display: flex;
+}
+
+main#main-contact form {
+	width: 45%;
+}
+
+main#main-contact p.img8 {
+	margin: 4rem 0;
+	width: 50%;
+}
+
+
+	/********************************* footer ******************************/
+
+
+	footer nav#footer-nav-desktop ul {
+		display: flex;
+		justify-content: center;
+		margin: 3rem 0;
+
+	}
+
+	footer nav#footer-nav-desktop ul li {
+		margin-left: 5rem;
+	}
+
+	footer nav#footer-nav-desktop ul li a {
+		font-size: 0.8rem;
+		color: rgb(67, 82, 121);
+	}
+
+	footer nav#footer-nav-desktop ul li a:hover {
+		color:rgba(88, 57, 204, 0.8)
+	}
+
+} /* End of media queries for desktop version *******/

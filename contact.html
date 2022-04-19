@@ -1,0 +1,123 @@
+<!doctype html>
+
+<html lang="en">
+
+    <head>
+
+        <title>My portfolio | About</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+	    <link href="styles.css" rel="stylesheet"  type="text/css" media="screen" />
+        <link href="print.css" rel="stylesheet" type="text/css" media="print" />
+	    <script src="js/picturefill.js" async></script>
+
+    </head>
+
+    <body>
+
+        <div id="wrapper">
+
+        <header>
+
+            <h1 id="main-heading"><a href="index.html">My potographs</a></h1>
+
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about/index.html">About</a></li>
+                    <li><a href="contact.html" class="current">Contact</a></li>
+                </ul>
+            </nav>
+
+            <nav id="main-nav-desktop-gallery">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="wildlife/index.html">Wildlife</a></li>
+                    <li><a href="marinelife/index.html" >Marine life</a></li>
+                    <li><a href="landscape/newzealand/index.html" >New Zealand</a></li>
+                    <li><a href="landscape/lofoten/index.html">Lofoten</a></li>
+                    <li><a href="landscape/vancouver-island/index.html">Vancouver Island</a></li>    
+                    <li><a href="about/index.html">About</a></li>
+                    <li><a href="contact.html" class="current-gallery">Contact</a></li>
+                </ul>
+            </nav>
+
+        </header>
+
+        <main id="main-contact">
+            
+
+        <form method="get" action="myPhp.php">
+
+            <div class="input-section">
+                <p> <label for="firstName">First name</label></p>
+                <input type="text" id="firstName" name="firstName">
+            </div>
+
+            <div class="input-section">
+                <p> <label for="lastName">Last name</label></p>
+                <input type="text"  id="lastName" name="lastName">
+            </div>
+
+            <div class="input-section">
+                <p><label for="email">Email</label></p>
+                <input type="email" id="email" placeholder="aaaa@gmail.com" name="email">
+            </div>
+
+             <div class="input-section input-section-message">
+                <p><label for="message">Message</label></p>
+                <input type="text"  id="message" name="message">
+            </div>
+
+            <div class="input-section">
+                <p>
+                    <input class="btn" type="submit" value="submit form">
+                    <input class="btn" type="reset" value="reset form">
+                </p>
+            </div>
+            
+
+        </form>
+
+        <p class="img8"><img srcset="landscape/newzealand/images/nz5-sm.jpg 320w, landscape/newzealand/images/nz5-md.jpg 640w, landscape/newzealand/images/nz5-lg.jpg 1200w,images/nz5-xl.jpg 2400w"
+            sizes="(min-width: 48em) 60vw" src="landscape/newzealand/images/nz5-sm.jpg" alt="Sunrise Coromandel New Zealand"></p>
+
+
+        </main>
+
+        <footer class="footer-about">
+
+            <nav id="footer-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="wildlife/wildlife-gallery.html">Wildlife</a></li>
+                    <li><a href="marinelife/marinelife-gallery.html">Marine life</a></li>
+                    <li><a href="landscape/newzealand/newzealand-gallery.html">New Zealand</a></li>
+                    <li><a href="landscape/lofoten/lofoten-gallery.html">Lofoten</a></li>
+                    <li><a href="landscape/vancouver-island/vancouver-island-gallery.html">Vancouver Island</a></li> 
+                    <li><a href="about/index.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <nav id="footer-nav-desktop">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="wildlife/index.html">Wildlife</a></li>
+                    <li><a href="marinelife/index.html">Marine life</a></li>
+                    <li><a href="landscape/newzealand/index.html">New Zealand</a></li>
+                    <li><a href="landscape/lofoten/index.html">Lofoten</a></li>
+                    <li><a href="landscape/vancouver-island/index.html">Vancouver Island</a></li>  
+                    <li><a href="about/index.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>    
+                </ul>
+            </nav>
+
+            
+        </footer>
+
+    </div>
+
+    </body>
+</html>
+

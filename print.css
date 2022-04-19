@@ -1,0 +1,38 @@
+body {
+    color: black;
+    background-color: #fff none;
+    font-size: 12pt;
+}
+
+a:link, a:visited {
+    color: black;
+    font-weight: bold;
+}
+
+#wrapper {
+    width: auto;
+    border: 0;
+    margin: 1in;
+    padding: 0;
+}
+
+.wrapper-gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.wrapper-gallery p {
+    width: 200px;
+    padding: 0.2in;
+}
+
+.wrapper-gallery p img {
+    width: 100%;
+}
+
+#main-nav, #main-nav-desktop-gallery, #main-nav-desktop,
+.button-gallery, #button-gallery-desktop,
+#footer-nav, #footer-nav-desktop {
+    display: none;
+}
+
